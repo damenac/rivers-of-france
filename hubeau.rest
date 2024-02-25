@@ -1,0 +1,14 @@
+### Temperature chronique (tous les données).
+GET http://hubeau.eaufrance.fr/api/v1/temperature/chronique
+
+### Temperature chronique de La Charentone à Ferrières-Saint-Hilaire
+GET http://hubeau.eaufrance.fr/api/v1/temperature/chronique.csv
+    ?code_region=28
+    &code_departement=27
+    &code_commune=27239
+
+### Poisons
+GET https://hubeau.eaufrance.fr/api/v1/etat_piscicole/observations
+    ?code_commune=27239
+    &size=200
+    &page=15
